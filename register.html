@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="Styles/blues_theme.css">
+        <link rel="stylesheet" href="Styles/addtl_styles.css">
+        <link rel="stylesheet" href="slideshow/slideshow.css">
+        <link rel="stylesheet" href="google_calendar/calendar.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+    
+        <title>UEM Student Health Hub</title>
+        <link rel="icon" type="image/x-icon" href="Assets/lhsa_graphics/favicon.svg">
+        
+    </head>
+
+<body>
+    
+    <header>
+        <nav class="nav-bar">
+
+            <a href="index.html">
+                <img class="nav-logo" src="Assets/lhsa_graphics/logouem.jpeg">
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="resources.html">Resources</a>
+                <a href="find_us.html">Find Us</a>
+            </div>
+
+            <button id="mobile-nav-btn">
+                <img src="Assets/Icons/menu_black_24dp.svg" alt="">
+            </button>
+
+            <div class="mobile-nav-links" id="mobile-nav-menu">
+                <a href="index.html">
+                    <span class="menu-item">
+                        <p>Home</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="events.html">
+                    <span class="menu-item">
+                        <p>Events</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="about.html">
+                    <span class="menu-item">
+                        <p>About</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="gallery.html">
+                    <span class="menu-item">
+                        <p>Gallery</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="resources.html">
+                    <span class="menu-item">
+                        <p>Resources</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="find_us.html">
+                    <span class="menu-item">
+                        <p>Find Us</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="hero" id="hero-register">
+            <h1>Join the UEM Health Student Association</h1>
+        </div>
+
+
+    </header>
+
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "279633772495357");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+    <section>
+        <h2>What's in it for you?</h2>
+
+        <div class="grid-responsive">
+            <article>             
+                <img class="grid-header-img" src="Assets/Icons/local_activity_black_24dp.svg" alt="Exlusive events icon">
+                <p class="grid-header">Exclusive Events</p>
+                <p class="perk-description">We work hard with pre-health advising staff and our connections at the College of Medicine to organize fun, informative, and useful events. Previous events have included: Vitals Clinics,  IEM-UEM Schools and collage, and more! Take a look at our Events and Gallery pages to see what we've done in the past!</p>
+            </article>
+            <article>
+                <img class="grid-header-img" src="Assets/Icons/handshake_black_24dp.svg" alt="">
+                <p class="grid-header">Volunteering</p>
+                <p class="perk-description">Want to give back to your community but don’t know where to start or don’t want to go alone? ​We organize group events and find the best ways for you to get involved in everything from helping the homeless to building homes for those in need. Just show up and we’ll take care of the rest. Or if you want to volunteer at a hospital we can help with your application!</p>
+            </article>
+            <article>
+                <img class="grid-header-img" src="Assets/Icons/groups_black_24dp.svg" alt="">
+                <p class="grid-header">Mentorship</p>
+                <p class="perk-description">We've partnered with medical students from the UEM Student Association to create a one-on-one mentorship program. Selected members will be paired with a medical student currently enrolled at the U of A College of Medicine for monthly check-ins, tips, resources, and advice on how to become a successful applicant for medical school.</p>
+            </article>
+            <article>
+                <img class="grid-header-img" src="Assets/Icons/travel_explore_black_24dp.svg" alt="">
+                <p class="grid-header">Resources</p>
+                <p class="perk-description">The University of Engineering and Management provides access to many opportunities for pre-health students on campus. However we know these are sometimes difficult to find which is why we search for pre-health events, opportunities, ​internships, and resources both on and off campus. Everything is sent to you in an organized newsletter or posted on our social media so you don’t have to go looking yourself.</p>
+            </article>
+            <article>
+                <img class="grid-header-img" src="Assets/Icons/school_black_24dp.svg" alt="">
+                <p class="grid-header">Pre-Health Advising</p>
+                <p class="perk-description">Do you need help choosing a major, courses, professional school, building a resume, or applying to programs? Our board members have prior experience with internships and health programs and are here to give advice. Our amazing pre-health advisors are here to guide you along every step of the way. And our friendly medical students can provide their first-hand experiences.</p>
+            </article>
+            <article>
+                <img class="grid-header-img" src="Assets/Icons/share_black_24dp.svg" alt="">
+                <p class="grid-header">Network</p>
+                <p class="perk-description">As an undergraduate in pre-health you'll quickly learn that networking is an essential part of your career. Being well connected to faculty, health professionals, and other students will make it much easier to find resources and achieve your goals. We have the contacts and provide a central location to make it easy for you to connect with likeminded individuals and make new friends.</p>
+            </article>
+        </div>
+        
+    </section>
+
+    <section>
+
+        <form class="registration-form">
+            <div class="form-container">
+                <h2>Join Now!</h2>
+                <input type="text" placeholder="First Name" autocomplete="off"><br>
+                <br>
+                <input type="text" placeholder="Last Name" autocomplete="off"> <br>
+                <br>
+                <input type="text" placeholder="e-mail" autocomplete="off"> <br>
+                <br>
+                <input type="text" name="" id="" placeholder="Major" autocomplete="off"> <br>
+                <br>
+                <input type="submit" class="form-submit" value="Submit →" >
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="simple-container">
+
+            <img class="footer-logo" src="Assets/lhsa_graphics/logohack.png" alt="">
+            
+            <div>
+                <p>Need to contact us? Send us an email or follow us on social media. Or contact one of our <a href="#">members</a> directly.</p>
+                
+                <div class="simple-container">
+                    <span>
+                        <a href="">
+                            <img class="social-icon" src="Assets/Icons/social_media/facebook_media_online_social_icon.svg">
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            <img class="social-icon" src="Assets/Icons/social_media/instagram_media_online_social_icon.svg">
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            <img class="social-icon"
+                                src="Assets/Icons/social_media/email_envelope_mail_message_send_icon.svg">
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script type="text/javascript" src="scripts/mobile-menu.js"></script>
+
+</body>

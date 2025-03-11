@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Styles/blues_theme.css">
+    <link rel="stylesheet" href="Styles/addtl_styles.css">
+    <link rel="stylesheet" href="slideshow/slideshow.css">
+    <link rel="stylesheet" href="google_calendar/calendar.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>UEM Student Health Hub</title>
+    <link rel="icon" type="image/x-icon" href="Assets/lhsa_graphics/favicon.svg">
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+
+            <a href="index.html">
+                <img class="nav-logo" src="Assets/lhsa_graphics/logouem.jpeg">
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="resources.html">Resources</a>
+                <a href="find_us.html">Find Us</a>
+            </div>
+
+            <button id="mobile-nav-btn">
+                <img src="Assets/Icons/menu_black_24dp.svg" alt="">
+            </button>
+
+            <div class="mobile-nav-links" id="mobile-nav-menu">
+                <a href="index.html">
+                    <span class="menu-item">
+                        <p>Home</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="events.html">
+                    <span class="menu-item">
+                        <p>Events</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="about.html">
+                    <span class="menu-item">
+                        <p>About</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="gallery.html">
+                    <span class="menu-item">
+                        <p>Gallery</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="resources.html">
+                    <span class="menu-item">
+                        <p>Resources</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="find_us.html">
+                    <span class="menu-item">
+                        <p>Find Us</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+            </div>
+        </nav>
+
+
+        <div class="hero" id="hero-events"></div>
+
+    </header>
+
+
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "279633772495357");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v13.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <section>
+        <h2>Our Latest Event</h2>
+
+        <!-- calendar is hidden by default -->
+        <div class="calendar-container" id="events">
+            <div class="event-title" id="summary"></div>
+
+            <div class="date-container">
+                <div class="month" id="month"></div>
+                <div class="day" id="day"></div>
+            </div>
+
+            <div class="time-location">
+                <div id="time-container">
+
+                    <span id="time-label">
+                        <b>Time:&nbsp</b>
+                    </span>
+                    <span id="start"></span>
+                    <span> - </span>
+                    <span id="end"></span>
+                </div>
+
+                <div id="location-container">
+
+                    <span>
+                        <b>Location:&nbsp</b>
+                    </span>
+                    <span class="location" id="location"></span>
+                </div>
+            </div>
+
+            <div class="description-container">
+                <span class="description" id="description"></span>
+            </div>
+        </div>
+
+        <div class="no-events-container" id="no-events"></div>
+
+    </section>
+
+    <section>
+        <article>
+            <h4>Fall 2019</h4>
+            <p>You can look forward to some great hands-on activities, medical knowledge, community service, and
+                fundraising events this semester!</p>
+            <div class="flyer-container">
+                <img class="img-frame" src="Assets/lhsa_flyers/12.jpg" alt="">
+                <img class="img-frame" src="Assets/lhsa_flyers/13.jpg" alt="">
+                <img class="img-frame" src="Assets/lhsa_flyers/11.jpg" alt="">
+            </div>
+        </article>
+
+        <br>
+
+
+
+        <article>
+            <h4>Spring 2019</h4>
+            <p>We started our new mentor program where we paired a medical student with each club member, we had a
+                discussion on what to do in the year between graduation and applying to professional school, we
+                networked with healthcare professionals, volunteered in a clinic abroad, learned to suture, and raised
+                money for some great causes!</p>
+
+            <div class="flyer-container">
+                <img class="img-frame" src="Assets/lhsa_flyers/10.jpg" alt="">
+                <img class="img-frame" src="Assets/lhsa_flyers/11.jpg" alt="">
+                <img class="img-frame" src="Assets/lhsa_flyers/6.jpg" alt="">
+                <img class="img-frame" src="Assets/lhsa_flyers/7.jpg" alt="">
+                <img class="img-frame" src="Assets/lhsa_flyers/8.jpg" alt="">
+                <img class="img-frame" src="Assets/lhsa_flyers/9.jpg" alt="">
+                <img class="img-frame" src="Assets/lhsa_flyers/10.jpg" alt="">
+            </div>
+        </article>
+
+        <br>
+
+        <article>
+            <h4>Fall 2018</h4>
+            <p>We visited the UA College of Medicine, networked with amazing medical students, learned to take vitals,
+                welcomed a representative of the Universidad Autonoma de Guadalajara School of Medicine, helped the
+                Leukemia & Lymphoma society organize the yearly Light the Night Walk, and we even helped build a home!
+            </p>
+
+            <div class="flyer-container">
+                <img class="img-frame" src="Assets/lhsa_flyers/1.jpg" alt="">
+                <img class="img-frame" src="Assets/lhsa_flyers/13.jpg" alt="">
+                <img class="img-frame" src="Assets/lhsa_flyers/14.jpg" alt="">
+                <img class="img-frame" src="Assets/lhsa_flyers/14.jpg" alt="">
+                <img class="img-frame" src="Assets/lhsa_flyers/5.jpg" alt="">
+            </div>
+        </article>
+
+    </section>
+
+    <footer>
+        <div class="simple-container">
+
+            <img class="footer-logo" src="Assets/lhsa_graphics/logohack.png" alt="">
+
+            <div>
+                <p>Need to contact us? Send us an email or follow us on social media. Or contact one of our <a
+                        href="#">members</a> directly.</p>
+
+                <div class="simple-container">
+                    <span>
+                        <a href="">
+                            <img class="social-icon"
+                                src="Assets/Icons/social_media/facebook_media_online_social_icon.svg">
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            <img class="social-icon"
+                                src="Assets/Icons/social_media/instagram_media_online_social_icon.svg">
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            <img class="social-icon"
+                                src="Assets/Icons/social_media/email_envelope_mail_message_send_icon.svg">
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="google_calendar/google_calendar.js"></script>
+    <script type="text/javascript" src="scripts/mobile-menu.js"></script>
+
+</body>
+
+</html>

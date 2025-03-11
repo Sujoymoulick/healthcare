@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Styles/blues_theme.css">
+    <link rel="stylesheet" href="Styles/addtl_styles.css">
+    <link rel="stylesheet" href="slideshow/slideshow.css">
+    <link rel="stylesheet" href="google_calendar/calendar.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>UEM Student Health Hub</title>
+    <link rel="icon" type="image/x-icon" href="Assets/lhsa_graphics/favicon.svg">
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+
+            <a href="index.html">
+                <img class="nav-logo" src="Assets/lhsa_graphics/logouem.jpeg">
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="resources.html">Resources</a>
+                <a href="find_us.html">Find Us</a>
+            </div>
+
+            <button id="mobile-nav-btn">
+                <img src="Assets/Icons/menu_black_24dp.svg" alt="">
+            </button>
+
+            <div class="mobile-nav-links" id="mobile-nav-menu">
+                <a href="index.html">
+                    <span class="menu-item">
+                        <p>Home</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="events.html">
+                    <span class="menu-item">
+                        <p>Events</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="about.html">
+                    <span class="menu-item">
+                        <p>About</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="gallery.html">
+                    <span class="menu-item">
+                        <p>Gallery</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="resources.html">
+                    <span class="menu-item">
+                        <p>Resources</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="find_us.html">
+                    <span class="menu-item">
+                        <p>Find Us</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "279633772495357");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v13.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+    <section>
+
+        <h2>What do we do at JSHH?</h2>
+
+        <div class="grid-responsive">
+            <article>
+                <img class="grid-header-img" src="Assets/Icons/school_black_24dp.svg" alt="Exlusive events icon">
+                <h4>Achieve Success</h4>
+                <p>As UEM we have all lived unique experiences and challenges that other groups have not had to face.
+                    Whether it be overcoming the struggles of being first generation college students or lack of access
+                    to resources, we have had to overcome large barriers to be successful in such a highly competitive
+                    field.</p>
+                <p>At UEMSHH we believe Juntos students are in a unique position to become culturally competent healthcare
+                    providers as a result of the diverse challenges we have had to overcome. Our goal is to motivate and
+                    empower these students.</p>
+            </article>
+            <article>
+                <img class="grid-header-img" src="Assets/Icons/travel_explore_black_24dp.svg" alt="">
+                <h4>Obtain resources</h4>
+                <p>One of the difficulties of being a pre-health student is that there is an extremely long list of
+                    requirements to reach the next step in our healthcare careers. Whether it be challenging courses,
+                    volunteer hours, extracurricular, or endless exams, the list can be overwhelming.</p>
+                <p>We want to provide a one-stop hub to showcase how students can gain access to useful study tools;
+                    simplify application processes for volunteer, research, and professional school; and access to
+                    unique opportunities.</p>
+            </article>
+            <article>
+                <img class="grid-header-img" src="Assets/Icons/groups_black_24dp.svg" alt="">
+                <h4>Grow a Community</h4>
+                <p>The pre-health field is highly competitive. Students are often busy seeing how they can position
+                    themselves to be the best and professional schools encourage us to do everything we can to stand out
+                    from our fellow peers. Sometimes its easy to get lost in the sea of expectations and forget that
+                    we’re not alone.</p>
+                <p>At UEMSHH we want to provide our members the opportunity to network with all the likeminded students,
+                    faculty, and health professionals on campus who know what it’s like to be a part of and thrive in
+                    such environment.​</p>
+            </article>
+        </div>
+
+        <span class="button-container">
+            <a class="link-button" href="register.html">Join Now</a>
+        </span>
+
+    </section>
+
+    <section class="breakaway-section" id="meet-the-team">
+
+        <h2>Meet the Team</h2>
+
+        <article class="team-card">
+            <div class="team-details">
+
+                <p class="team-name">Raghav Shah</p>
+
+                <img class="avatar" src="Assets/photos/avatars/dr.raghav.png" alt="">
+
+                <div>
+                    <p>President</p>
+                    <p>Major: Physiology</p>
+                    <a href="mailto:gheraldez@email.arizona.edu">shahraghav@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="team-bio">
+                <p>Hello! My name is Dr. Raghav Shah . I was born and raised in Jaipur, Rajasthan, but my parents are from Kolkata
+            . As some of you can probably relate, they came to the states to give my siblings and I
+                    opportunities they never had. Having close friends that could also relate made UEMSHH come alive. We
+                    saw the lack of resources offered to UEM pre-health students as well as a lack of advertisement
+                    for the amazing (but few) resources offered and we wanted to make a change. Aside from this, one of
+                    our major goals for this club is to provide students with a sense of belonging. We don’t want to
+                    push each other down while trying to reach our goals. We want to help each other grow and cheer each
+                    other on, like a family.</p>
+
+                <p>Now that you have a little more background about the club and how it was founded (it’s a bio, not a
+                    mission statement, Raghav…) I know, I know.. I’ll finish with a few facts about my self. On my free
+                    time, I enjoy working out, playing my guitar, and singing. I’m definitely not a good singer, but a
+                    very passionate one at the very least. I also love dancing my little heart out, so if you see me
+                    randomly dancing for no reason, you have my permission to laugh.</p>
+            </div>
+        </article>
+
+        <article class="team-card">
+            <div class="team-details">
+                <p class="team-name">Dr. Anil Tambi</p>
+
+                <img class="avatar" src="Assets/photos/avatars/dranil.png" alt="">
+
+                <div>
+                    <p>Vice-President</p>
+                    <p>Major: Physiology, Psychology</p>
+                    <a href="mailto:luismiranda@email.arizona.edu">aniltambi32@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="team-bio">
+                <p>I was born in Kolkata,India but raised in Jaipur. Travelling between the two allowed me to
+                    observe the differences between urban life and rural life. Seeing the disparities in health and
+                    opportunities that often came with such distinct lifestyles encouraged me to give back to my
+                    community by volunteering as often as I could.</p>
+
+                <p>I always had a fascination for science and learning about the human body. Naturally, studying
+                    medicine was the perfect way to satisfy my curiosity and eagerness to help the less fortunate.</p>
+
+                <p>When I’m not frantically studying for an exam I enjoy hiking and photography. Many trails often make
+                    for good photographs that make me look I know what I’m doing (I usually don’t).</p>
+
+            </div>
+        </article>
+
+        <article class="team-card">
+            <div class="team-details">
+                <p class="team-name">Dr.Jaishree Jain</p>
+
+                <img class="avatar" src="Assets/photos/avatars/dr.jaishree-jain.jpeg" alt="">
+
+                <div>
+                    <p>Community Service Chair</p>
+                    <p>Major: Physiology</p>
+                    <a href="jaishreejain@email.arizona.edu">jaishreejain@email.edu</a>
+                </div>
+            </div>
+
+            <div class="team-bio">
+                <p>Hey! My name is Dr.Jaishree Jain and I am a Senior studying Physiology, Public Health, and Spanish.
+                    My goal is to apply to Medical School this summer and become a traveling physician working in rural
+                    communities all over the world. I was born and raised in Tucson by my dad who works in Rural Public
+                    Health, and my mom who is a Guatemalan migrant working as a nurse. I definitely became passionate
+                    about medicine and health disparities from my parents and they are the reason I work hard everyday.
+                </p>
+
+                <p>JSHH is such an amazing organization because it brings together the Latin community and provides
+                    incredible resources. With such a big campus it can be difficult to meet people similar to you or
+                    with the same passion. Outside of school you will probably find me at a coffee shop even though I
+                    don't like coffee or hiking at sunset!</p>
+
+
+            </div>
+        </article>
+    </section>
+
+
+
+    <footer>
+        <div class="simple-container">
+
+            <img class="footer-logo" src="Assets/lhsa_graphics/logohack.png" alt="">
+
+            <div>
+                <p>Need to contact us? Send us an email or follow us on social media. Or contact one of our <a
+                        href="#">members</a> directly.</p>
+
+                <div class="simple-container">
+                    <span>
+                        <a href="">
+                            <img class="social-icon"
+                                src="Assets/Icons/social_media/facebook_media_online_social_icon.svg">
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            <img class="social-icon"
+                                src="Assets/Icons/social_media/instagram_media_online_social_icon.svg">
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            <img class="social-icon"
+                                src="Assets/Icons/social_media/email_envelope_mail_message_send_icon.svg">
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script type="text/javascript" src="scripts/mobile-menu.js"></script>
+
+</html>

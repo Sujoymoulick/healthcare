@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Styles/blues_theme.css">
+    <link rel="stylesheet" href="Styles/addtl_styles.css">
+    <link rel="stylesheet" href="slideshow/slideshow.css">
+    <link rel="stylesheet" href="google_calendar/calendar.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>UEM Student Health Hub</title>
+    <link rel="icon" type="image/x-icon" href="Assets/lhsa_graphics/favicon.svg">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-bar">
+
+            <a href="index.html">
+                <img class="nav-logo" src="Assets/lhsa_graphics/logouem.jpeg">
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="resources.html">Resources</a>
+                <a href="find_us.html">Find Us</a>
+            </div>
+
+            <button id="mobile-nav-btn">
+                <img src="Assets/Icons/menu_black_24dp.svg" alt="">
+            </button>
+
+            <div class="mobile-nav-links" id="mobile-nav-menu">
+                <a href="index.html">
+                    <span class="menu-item">
+                        <p>Home</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="events.html">
+                    <span class="menu-item">
+                        <p>Events</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="about.html">
+                    <span class="menu-item">
+                        <p>About</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="gallery.html">
+                    <span class="menu-item">
+                        <p>Gallery</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="resources.html">
+                    <span class="menu-item">
+                        <p>Resources</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+                <a href="find_us.html">
+                    <span class="menu-item">
+                        <p>Find Us</p>
+                        <p>&#62;</p>
+                    </span>
+                </a>
+            </div>
+        </nav>
+
+
+        <div class="hero" id="hero-index">
+            <h1 class="new-class">UEM student</h1>
+            <h1> Health Hub</h1>
+
+            <div class="simple-container call-to-action-container">
+                <span class="button-container">
+                    <a class="call-to-action-button-alt" href="about.html">Learn More</a>
+                </span>
+                <span class="button-container">
+                    <a class="call-to-action-button" href="register.html">Become a Member</a>
+                </span>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "279633772495357");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v13.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/fbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+    <section>
+        <h2>What have we been up to?</h2>
+
+        <p>At UEMSHH we like to provide our members with everything from volunteering opportunities to hands on clinical
+            practice in order to make them the best pre-health students possible. Check out some of our most recent
+            activities below!</p>
+
+        <div class="slideshow">
+
+            <figure class="main-slide-container">
+                <img id="main-slide" src="Assets/photos/events/2.jpg" alt="">
+                <!-- <figcaption class="caption" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis eget eros in imperdiet. Cras pulvinar sagittis ante ac fringilla.</figcaption> -->
+            </figure>
+
+            <div class="carousel">
+
+                <span class="slideshow-button" id="prev-button">&#10094;</span>
+
+                <div class="carousel-thumbs">
+                    <img src="Assets/photos/events/1.jpg" alt="">
+                    <img src="Assets/photos/events/3.jpg" alt="">
+                    <img src="Assets/photos/events/4.jpg" alt="">
+                    <img src="Assets/photos/events/5.jpg" alt="">
+                    <img src="Assets/photos/events/2.jpg" alt="">
+                    <img src="Assets/photos/events/6.jpg" alt="">
+                    <img src="Assets/photos/events/7.jpg" alt="">
+                    <img src="Assets/photos/events/3.jpg" alt="">
+                    <img src="Assets/photos/events/8.jpg" alt="">
+                    <img src="Assets/photos/events/9.jpg" alt="">
+                    <img src="Assets/photos/events/10.jpg" alt="">
+                    <img src="Assets/photos/events/11.jpg" alt="">
+                    <img src="Assets/photos/events/12.jpg" alt="">
+                    <img src="Assets/photos/events/4.jpg" alt="">
+                    <img src="Assets/photos/events/6.jpg" alt="">
+                </div>
+
+                <span class="slideshow-button" id="next-button">&#10095;</span>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="breakaway-section">
+
+
+        <article class="card">
+
+            <img src="Assets/Illustrations/undraw_camera_re_cnp4.svg" alt="">
+
+            <span class="card-blurb">
+                <p class="card-heading">Check out all the highlights from our previous events</p>
+
+                <p>We like to show off our members' accomplishments and undertakings. Our club members are always taking
+                    photos at our events so you know exactly what we've been up to.</p>
+
+                <span class="button-container">
+                    <a class="link-button" href="gallery.html">Go to Gallery</a>
+                </span>
+            </span>
+        </article>
+
+
+    </section>
+
+    <section>
+        <h2>Our Latest Event</h2>
+
+        <!-- calendar is hidden by default -->
+        <div class="calendar-container" id="events">
+            <div class="event-title" id="summary"></div>
+
+            <div class="date-container">
+                <div class="month" id="month"></div>
+                <div class="day" id="day"></div>
+            </div>
+
+            <div class="time-location">
+                <div id="time-container">
+
+                    <span id="time-label">
+                        <b>Time:&nbsp</b>
+                    </span>
+                    <span id="start"></span>
+                    <span> - </span>
+                    <span id="end"></span>
+                </div>
+
+                <div id="location-container">
+
+                    <span>
+                        <b>Location:&nbsp</b>
+                    </span>
+                    <span class="location" id="location"></span>
+                </div>
+            </div>
+
+            <div class="description-container">
+                <span class="description" id="description"></span>
+            </div>
+        </div>
+
+        <div class="no-events-container" id="no-events"></div>
+
+    </section>
+
+    <section class="breakaway-section">
+
+        <article class="card">
+
+            <img src="Assets/Illustrations/undraw_shared_goals_re_jvqd.svg" alt="">
+
+            <span class="card-blurb">
+                <p class="card-heading">Have a look at everything we've done so far</p>
+
+                <p>Clinics, national conferences, medical school panels, volunteering and so much more. Go see the types
+                    of opportunities you could have by joining us </p>
+
+                <span class="button-container">
+                    <a class="link-button" href="events.html">Go to Events</a>
+                </span>
+            </span>
+
+        </article>
+
+    </section>
+
+    <section>
+        <h2>Our Mission</h2>
+
+        <p>The UEM STUDENT HEALTH HUB is an organization built to inspire, empower, and motivate Latino
+            students to succeed in healthcare professions such as medicine, nursing, pharmacy, and more.</p>
+
+        <p>​At UEMSHH We thrive to empower minority students in pre-health and to help them achieve their full potential
+            by giving them resources and opportunities to achieve success in their respective fields. In doing so, we
+            hope to promote diversity and develop culturally competent healthcare providers that will one day help
+            alleviate the health problems and necessities of marginalized communities.</p>
+
+    </section>
+
+    <section class="breakaway-section">
+
+        <article class="card">
+
+            <img src="Assets/Illustrations/undraw_about_us_page_re_2jfm.svg" alt="">
+
+            <span class="card-blurb">
+                <p class="card-heading">Learn more about the team behind JSHH</p>
+
+                <p>Our board members come from diverse backgrounds and are all dedicated to helping our fellow JUNTOS
+                    students achieve their goals.</p>
+
+                <span class="button-container">
+                    <a class="link-button" href="about.html#meet-the-team">Meet the Team</a>
+                </span>
+            </span>
+
+        </article>
+
+
+    </section>
+
+    <section>
+        <h2>We Have Resources For You</h2>
+
+        <div class="simple-container" id="resources-container">
+
+            <figure>
+                <a href="resources.html#">
+                    <img class="img-frame" src="Assets/Icons/medication_liquid_black_24dp.svg" alt="">
+                    <p>Pre-Health Guidance</p>
+                </a>
+            </figure>
+
+            <figure>
+                <a href="resources.html">
+                    <img class="img-frame" src="Assets/Icons/science_black_24dp.svg" alt="">
+                    <p>Research Opportunities</p>
+                </a>
+            </figure>
+
+            <figure>
+                <a href="resources.html">
+                    <img class="img-frame" src="Assets/Icons/volunteer_activism_black_24dp.svg" alt="">
+                    <p>Places to Volunteer</p>
+                </a>
+            </figure>
+
+            <figure>
+                <a href="resources.html">
+                    <img class="img-frame" src="Assets/Icons/business_center_black_24dp.svg" alt="">
+                    <p>Internships & More</p>
+                </a>
+            </figure>
+
+        </div>
+
+
+    </section>
+
+    <section class="breakaway-section">
+
+        <article class="card">
+
+            <img src="Assets/Illustrations/undraw_searching_re_3ra9.svg" alt="">
+
+            <span class="card-blurb">
+                <p class="card-heading">We looked for pre-health resources so you don't have to</p>
+
+                <p>We know how overwhelming it can be to navigate all the available tools and resources for pre-health
+                    students on and off campus. So we made sure to narrow down the list of internships scholarships, and
+                    opportunities.</p>
+
+                <span class="button-container">
+                    <a class="link-button" href="resources.html">Go to Resources</a>
+                </span>
+            </span>
+
+        </article>
+
+    </section>
+
+    <footer>
+        <div class="simple-container">
+
+            <img class="footer-logo" src="Assets/lhsa_graphics/logohack.png" alt="">
+
+            <div>
+                <p>Need to contact us? Send us an email or follow us on social media. Or contact one of our <a
+                        href="#">members</a> directly.</p>
+
+                <div class="simple-container">
+                    <span>
+                        <a href="">
+                            <img class="social-icon"
+                                src="Assets/Icons/social_media/facebook_media_online_social_icon.svg">
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            <img class="social-icon"
+                                src="Assets/Icons/social_media/instagram_media_online_social_icon.svg">
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            <img class="social-icon"
+                                src="Assets/Icons/social_media/email_envelope_mail_message_send_icon.svg">
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script>
+
+        // Calendar Control
+
+        const calendarContainer = document.getElementById('events');
+        const noEventsContainer = document.getElementById('no-events');
+
+        let ajax = new XMLHttpRequest();
+        ajax.open('GET', 'google_calendar/calendar-plugin.php?nextEvent=true');
+        ajax.send();
+
+        ajax.onreadystatechange = function () {
+            if (ajax.readyState === 4 && ajax.status === 200) {
+
+                // An object containing the details for the next event
+                let nextEvent = JSON.parse(ajax.responseText);
+                console.log(nextEvent);
+
+                if (nextEvent === 'No upcoming events.') {
+                    noEventsContainer.style.display = 'block';
+                    noEventsContainer.innerHTML = 'There are currently no upcoming events. Stay tuned for more to come.'
+                } else {
+
+                    // FIXME: handle all day events
+                    // FIXME: handle recurring events?
+
+                    calendarContainer.style.display = 'grid';
+
+                    // Take object parsed from JSON and extract keys and values
+                    // into an array for easier handling
+                    const keys = Object.keys(nextEvent);
+                    const values = Object.values(nextEvent);
+
+                    // If event is all-day hide the time container
+                    // Google calendar does not allow just a start or end time
+                    // so no need to worry about that case.
+                    const dayIndex = keys.indexOf('day');
+                    if (values[dayIndex] === false) {
+                        document.getElementById('time-container').style.display = 'none';
+                    }
+
+                    for (let i = 0; i < values.length; i++) {
+
+                        // If any fields are null don't display data for them
+                        if (values[i] != null) {
+                            const divToChange = document.getElementById(keys[i])
+                            divToChange.innerHTML = nextEvent[keys[i]];
+                        }
+                    }
+                }
+            }
+        };
+
+    </script>
+
+    <script type="text/javascript" src="scripts/mobile-menu.js"></script>
+
+</body>
+
+</html>
